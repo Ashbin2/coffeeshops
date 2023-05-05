@@ -1,0 +1,153 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "./bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+:root{
+    --primary-color:#0a1118;
+    --primary-color-highlight:#233D54;
+    --bs-body-bg:#FBF0F6;
+    --bs-body-font-family:'Montserrat',sans-serif;
+}
+
+ //custem container
+  // // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1600px) { 
+    .container-custom{
+        width: 1540px;;
+       
+       }
+  }
+
+ // // XX-Large devices (larger desktops, 1400px and up)
+ @media (min-width: 1400px) { 
+    .container-custom{
+        width: 1340px;;
+       
+       }
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+ @media (min-width: 1200px) { 
+    .container-custom{
+        width: 1140px;;
+       
+       }
+
+ }
+ 
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+   .container-custom{
+    width:100%;
+    padding: 0 4rem;
+    margin:0 auto;
+   }
+
+//    @media (min-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+
+
+
+
+
+.hero{
+    position: relative;
+    height:100vh;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+.hero__video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+}
+.hero__overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    z-index: 1;
+
+
+}
+.hero__content{
+    z-index: 1;
+}
+.hero__content-width{
+    max-width: 540px;
+    padding-top: 239px;
+}
+.hero__scroll-btn{
+    position: absolute;
+    left: 50%;
+    bottom:30px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color:var(--bs-light);
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.hero__scroll-btn:hover{
+    color: var(--bs-light);
+    opacity: 0.8;
+}
+.hero__scroll-btn .bi {
+    transition-delay:0.8s;
+    animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+    from{
+        transform:translateY(0px);
+    }
+    to{
+        transform:translateY(-10px);
+    }
+}
+
+/**
+steps section
+**/
+.steps{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+.steps--background {
+    background-color: #fffdee;
+}
+.steps__section-thumbnail{
+    height: 240px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+@media (min-width:554px){
+    .steps__section-thumbnail{
+        height:auto;
+       
+    }
+}
+.steps__content_width{
+    max-width: 456px;
+    margin: 0 auto;
+}
+
+.header{
+    z-index: 2;
+}
