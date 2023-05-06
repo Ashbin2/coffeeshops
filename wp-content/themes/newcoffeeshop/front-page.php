@@ -51,7 +51,7 @@ get_header();
 					<span>01</span>
 					<h1 class="h2 mb-4">coffee flavour</h1>
 					<p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate cumque facere ipsa dolorum odio voluptate nihil maxime corporis nam quas commodi quia repellendus cum blanditiis obcaecati, ex eligendi unde ab.</p>
-					<a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+					<a href="#">Read More ! <i class="bi bi-arrow-right"></i></a>
 				</div>
 
 
