@@ -18,6 +18,7 @@
         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
       </a>
       <span class="mb-3 mb-md-0 text-white">© 2023 CoffeeShops, Inc</span>
+      <span class="mb-3 mb-md-0 text-white">&nbsp;&nbsp;Powered by Ashp</span>
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white pe-3">
